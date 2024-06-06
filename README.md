@@ -58,6 +58,8 @@ This project is designed to become familiar with navigating Wireshark including 
   Finally, I found the e-tag value for the packet under the application protocol section (OSI layer 5): <br />
   <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/a42ea6fe-aa5e-4d15-aaa7-cd5e7b71cbbb" height="80%" width="80%" alt="under the hypertext transfer protocol dropdown the etag is highlighted in blue"/>
 </p>
+<br />
+<br />
 - <b>Packet Navigation</b>
 <p>In this task I used the search bars to find packets containing specific strings and also exported an image and a text file to further analyze.</p>
 <br>
@@ -65,21 +67,26 @@ This project is designed to become familiar with navigating Wireshark including 
   <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/549709d4-7736-4765-a575-4591509085a8" height="80%" width="80%" alt="the search bar is surrounded by a red rectangle with a speech bubble reading string entered into the search and below the artist name is also within a red rectangle with a red arrow and the words artist 1s name in the html between the h3 tag opening and closing"/>
   <br />
   <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
+  The next question sends us on a bit of a hunt. First, we use the "go to packet" function to find the comment on packet 12: <br />
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/3bd18f9e-6671-41c9-b32f-7397f3c48ef4" height="80%" width="80%" alt="A red rectangle surrounds the comment which reads go to packet number 39765, look at the packet details pane. Right-click on the JPEG section and Export packet bytes. This is an alternative way of extracting data from a capture file. What is the MD5 hash value of extracted image?"
+/>
   <br />
   <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
+  The comment directed me to find the jpeg section of packet 39765, export those packet bytes, and then calculate the MD5 hash value of the extracted image: <br />
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/ae32a325-95d8-4556-acca-af25f9742297" height="80%" width="80%" alt="the desktop of ubuntu linux with terminal open. On the desktop is seen a file named wireshark_image with a comment reading exported jpeg image from wireshark. On the terminal are commands navigating to the desktop and running md5sum on the wireshark_image file. The output is highlighted with a comment that reads hash value calculated using md5sum"/>
    <br />
   <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
+  Next, I used the export objects feature to find the text file that was sent over the wire, exported it to the desktop, and opened it to discover that the Alien's name is PACKETMASTER: <br />
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/34955e8a-7c22-4142-8f7e-66a623ec7d21" height="80%" width="80%" alt="the export http object list window is shown with the string .txt in the search bar resulting in on item"/>
+   <br />
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/7d643468-7003-4db9-b184-f4909a57ad88" height="80%" width="80%" alt="a text file with a graphic of an alien made out of dots and slashes with large bold lettering reading PACKETMASTER"/>
    <br />
   <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
+  For the final question in this section I opened the expert information window by clicking on the red circle in the bottom left corner. I found that there were 1636 warnings, marked in yellow in the list: <br />
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/43530ea4-dbfd-4163-8dc4-054e8b98c145" height="80%" width="80%" alt="the expert information window is shown and the yellow highlighted line called warning at the middle has a red oval around the number 1636 at the right hand side"/>
 </p>
+<br />
+<br />
 - <b>Packet Filtering</b>
 <p>In this task .</p>
 <br>
@@ -102,3 +109,4 @@ This project is designed to become familiar with navigating Wireshark including 
   : <br />
   <img src="" height="80%" width="80%" alt=""/>
 </p>
+<img width="961" alt="Wireshark expert info window" src="">
