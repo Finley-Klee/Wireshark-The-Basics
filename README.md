@@ -88,25 +88,13 @@ This project is designed to become familiar with navigating Wireshark including 
 <br />
 <br />
 - <b>Packet Filtering</b>
-<p>In this task .</p>
+<p>For this last task I worked on filtering through the packet capture file by selecting protocol type and following the packets in a conversation.</p>
 <br>
-<p align="center">I : <br/>
-  <img src="" height="80%" width="80%" alt=""/>
+<p align="center">I started by applying the filter http by right clicking on the hypertext transfer protocol in packet 4 and choosing apply filter. This resulted in 1089 packets being shown out of the total 58620 in the capture file.: <br/>
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/0ab138f7-5b03-4537-94ab-80b071668bea" height="80%" width="80%" alt="the wireshark window with a green bar at the top reading http and a red arrow pointing to that with the words filter query in red. At the bottom a red rectangle surrounds the words displayed: 1089 and a red arrow points to this section."/>
   <br />
   <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
-  <br />
-  <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
-   <br />
-  <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
-   <br />
-  <br />
-  : <br />
-  <img src="" height="80%" width="80%" alt=""/>
+  To answer the last two questions I used the follow stream feature to inspect the http traffic starting with packet 33790. In this conversation I searched for the nubmer of artists by using find, and discovered that there are 3 artists, and the name of the second artist is Blad3: <br />
+  <img src="https://github.com/Finley-Klee/Wireshark-The-Basics/assets/171582741/c6bd2a0c-2d58-4fce-a683-b05b0a44ca50" height="80%" width="80%" alt="in the follow http stream window can be seen html text and artist=1, artist=2, and artist=3 are underlined in red. There is a red rectangle around the text Blad3 which is the name of artist 2"/>
 </p>
-<img width="961" alt="Wireshark expert info window" src="">
+
